@@ -60,6 +60,7 @@ public class LoginFormController implements Initializable {
                     if (name.equals("ijse") && password.equals("1234")){
                         Stage window = (Stage) this.root.getScene().getWindow();
                         window.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/lk/royalInstitute/hibernate/view/MainForm.fxml"))));
+                        window.centerOnScreen();
                         window.show();
                     }else{
                         new Alert(Alert.AlertType.WARNING, "Try Again!",

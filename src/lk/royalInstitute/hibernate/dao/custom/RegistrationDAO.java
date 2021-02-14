@@ -15,4 +15,6 @@ public interface RegistrationDAO extends SuperDAO<Registration, Integer> {
     String getLastReg(String stuId);
 
     List<CoustomEntity> getAllREG(String id);
+
+    boolean deleteReg(String id);
 }

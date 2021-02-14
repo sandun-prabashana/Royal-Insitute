@@ -105,4 +105,18 @@ public class RegistrationDAOImpl implements RegistrationDAO {
         return list;
     }
 
+    @Override
+    public boolean deleteReg(String id) {
+        Session session = FactoryConfiguration.getInstance().getSession();
+
+        Transaction transaction = session.beginTransaction();
+
+        session.delete(session.get(Registration.class, id));
+
+        transaction.commit();
+
+        session.close();
+        return true;
+    }
+
 }

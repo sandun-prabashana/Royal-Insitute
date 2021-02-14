@@ -9,7 +9,6 @@ public class CoustomDTO {
     private String SId;
     private String CId;
     private Button button;
-
     private String Student_ID;
     private String Student_Name;
     private String Course_ID;
@@ -85,5 +84,53 @@ public class CoustomDTO {
 
     public void setButton(Button button) {
         this.button = button;
+    }
+
+    public String getStudent_ID() {
+        return Student_ID;
+    }
+
+    public void setStudent_ID(String student_ID) {
+        Student_ID = student_ID;
+    }
+
+    public String getStudent_Name() {
+        return Student_Name;
+    }
+
+    public void setStudent_Name(String student_Name) {
+        Student_Name = student_Name;
+    }
+
+    public String getCourse_ID() {
+        return Course_ID;
+    }
+
+    public void setCourse_ID(String course_ID) {
+        Course_ID = course_ID;
+    }
+
+    public String getCourse_Name() {
+        return Course_Name;
+    }
+
+    public void setCourse_Name(String course_Name) {
+        Course_Name = course_Name;
+    }
+
+    public String getReg_Date() {
+        return Reg_Date;
+    }
+
+    public void setReg_Date(String reg_Date) {
+        Reg_Date = reg_Date;
+    }
+
+    public Double getReg_Fee() {
+        return Reg_Fee;
+    }
+
+    public void setReg_Fee(Double reg_Fee) {
+        Reg_Fee = reg_Fee;
     }
 }

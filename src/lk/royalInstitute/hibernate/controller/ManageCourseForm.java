@@ -82,6 +82,7 @@ public class ManageCourseForm implements Initializable {
 
         CourseDTO course = new CourseDTO(id, name,fee, duration);
         try {
+
             boolean deleted = courseBO.deleteCourse(course);
 
             if (deleted) {

@@ -64,4 +64,9 @@ public class RegistrationBOImpl implements RegistrationBO {
         }
         return list;
     }
+
+    @Override
+    public boolean deleteReg(String id) throws Exception {
+        return registrationDAO.deleteReg(id);
+    }
 }

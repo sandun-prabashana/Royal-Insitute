@@ -18,7 +18,7 @@ public class AppInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(this.getClass().getResource("lk/royalInstitute/hibernate/view/SearchCourseFrom.fxml"));
+        Parent root = FXMLLoader.load(this.getClass().getResource("lk/royalInstitute/hibernate/view/loginForm.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setTitle("Royal Insitute");
         primaryStage.getIcons().add(new Image("/lk/royalInstitute/hibernate/asset/—Pngtree—3d crown vector royal_3781022.png"));

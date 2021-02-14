@@ -27,7 +27,7 @@ public class QuaryDAOImpl implements QuaryDAO {
             all.add(new CoustomEntity(objects[0].toString(), objects[1].toString(), objects[2].toString(), objects[3].toString(), Integer.parseInt(objects[4].toString()),
                     objects[5].toString(), Double.parseDouble(objects[6].toString())));
         };
-        session.delete(session.get(Student.class, "S001"));
+//        session.delete(session.get(Student.class, "S001"));
         transaction.commit();
         session.close();
         return all;

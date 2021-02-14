@@ -17,4 +17,6 @@ public interface RegistrationBO extends SuperBO {
     String newRegNo(String stuId)throws Exception;
 
     List<RegistrationDTO> getReg(String id)throws Exception;
+
+    boolean deleteReg(String id)throws Exception;
 }

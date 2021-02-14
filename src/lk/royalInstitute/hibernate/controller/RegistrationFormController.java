@@ -148,7 +148,6 @@ public class RegistrationFormController implements Initializable {
         getRegId();
         txtNo.setDisable(true);
 
-
     }
 
     public void btnAddOnAction(ActionEvent actionEvent) {
