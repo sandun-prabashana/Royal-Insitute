@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="650.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.royalInstitute.hibernate.controller.RegistrationFormController">
+   <children>
+      <JFXTextField fx:id="txtNo" focusColor="GOLD" labelFloat="true" layoutX="51.0" layoutY="100.0" prefHeight="30.0" prefWidth="250.0" promptText="Reg No" />
+      <JFXTextField fx:id="txtDate" focusColor="GOLD" labelFloat="true" layoutX="488.0" layoutY="28.0" prefHeight="30.0" prefWidth="200.0" promptText="Reg Date" />
+      <ImageView fitHeight="73.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/pngkey.com-royals-logo-png-459431.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="cmbSId" focusColor="GOLD" labelFloat="true" layoutX="51.0" layoutY="160.0" onAction="#cmbSIdOnAction" prefHeight="30.0" prefWidth="250.0" promptText="Student ID" />
+      <JFXComboBox fx:id="cmbCId" focusColor="GOLD" labelFloat="true" layoutX="51.0" layoutY="210.0" onAction="#cmbCIdOnAction" prefHeight="30.0" prefWidth="250.0" promptText="Course ID" />
+      <JFXTextField fx:id="txtRFee" focusColor="GOLD" labelFloat="true" layoutX="51.0" layoutY="265.0" prefHeight="30.0" prefWidth="250.0" promptText="Fee(LKR)" />
+      <TableView fx:id="tblReg" layoutX="30.0" layoutY="336.0" prefHeight="246.0" prefWidth="640.0">
+        <columns>
+          <TableColumn fx:id="clmRegNo" prefWidth="75.0" text="Reg No" />
+          <TableColumn fx:id="clmRegDate" prefWidth="104.0" text="Reg Date" />
+            <TableColumn fx:id="clmRegFee" prefWidth="133.0" text="Fee" />
+            <TableColumn fx:id="clmSId" prefWidth="118.0" text="Student ID" />
+            <TableColumn fx:id="clmCId" prefWidth="121.0" text="Course ID" />
+            <TableColumn fx:id="clmDelete" prefWidth="88.0" text="Delete" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="595.0" layoutY="265.0" onAction="#btnAddOnAction" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: gold;" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnPlace" layoutX="518.0" layoutY="606.0" onAction="#btnRegOnAction" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: red;" text="Place Registration">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="imghome" fitHeight="50.0" fitWidth="50.0" layoutX="325.0" layoutY="11.0" onMouseClicked="#imghomeOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home_page_48px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

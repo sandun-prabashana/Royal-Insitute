@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="321.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.royalInstitute.hibernate.controller.LoginFormController">
+   <children>
+      <JFXCheckBox fx:id="bxShow" layoutX="470.0" layoutY="207.0" onAction="#bxShowOnAction" prefHeight="18.0" prefWidth="116.0" text="Show Password" />
+      <TextField fx:id="pass_text" layoutX="182.0" layoutY="203.0" prefHeight="25.0" prefWidth="244.0" />
+      <Label layoutX="76.0" layoutY="142.0" prefHeight="16.0" prefWidth="77.0" text="User Name">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="208.0" prefHeight="16.0" prefWidth="77.0" text="Password">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pass_hidden" layoutX="182.0" layoutY="203.0" prefHeight="25.0" prefWidth="244.0" text="1234" />
+      <TextField fx:id="txtName" layoutX="182.0" layoutY="138.0" prefHeight="25.0" prefWidth="244.0" text="ijse">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="109.0" fitWidth="200.0" layoutX="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/pngkey.com-royals-logo-png-459431.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="example" fitHeight="84.0" fitWidth="116.0" layoutX="478.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="btnLogin" layoutX="376.0" layoutY="263.0" onAction="#btnLoginOnAction" prefHeight="25.0" prefWidth="100.0" style="-fx-border-color: gold; -fx-background-color: white;" text="Login">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="132.0" layoutY="263.0" onAction="#btnCancelOnAction" prefHeight="25.0" prefWidth="100.0" style="-fx-border-color: gold; -fx-background-color: white;" text="Cancel">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

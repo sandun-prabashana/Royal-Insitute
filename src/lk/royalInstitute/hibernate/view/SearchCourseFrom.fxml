@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.royalInstitute.hibernate.controller.SearchCourseFromController">
+   <children>
+      <JFXComboBox fx:id="cmbSId" focusColor="GOLD" labelFloat="true" layoutX="217.0" layoutY="97.0" onAction="#cmbSIdOnAction" prefHeight="30.0" prefWidth="250.0" promptText="Student ID" />
+      <ImageView fitHeight="73.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/pngkey.com-royals-logo-png-459431.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblDetail" layoutX="10.0" layoutY="225.0" prefHeight="246.0" prefWidth="680.0">
+         <columns>
+            <TableColumn fx:id="clmSname" prefWidth="116.0" text="Student Name" />
+            <TableColumn fx:id="clmCid" prefWidth="109.0" text="Course ID" />
+            <TableColumn fx:id="clmCname" prefWidth="136.0" text="Course Name" />
+            <TableColumn fx:id="clmRno" prefWidth="68.0" text="Reg No" />
+            <TableColumn fx:id="clmDate" prefWidth="133.0" text="Reg Date" />
+            <TableColumn fx:id="clmFee" prefWidth="117.0" text="Reg Fee" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

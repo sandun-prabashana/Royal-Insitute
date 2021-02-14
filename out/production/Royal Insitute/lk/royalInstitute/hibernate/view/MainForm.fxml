@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.royalInstitute.hibernate.controller.MainFormController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="264.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/pngkey.com-royals-logo-png-459431.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="157.0" layoutY="167.0" prefHeight="38.0" prefWidth="415.0" text="Royal Institute" textAlignment="CENTER" textFill="GOLD">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgCustomer" fitHeight="100.0" fitWidth="100.0" layoutX="57.0" layoutY="330.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/clipart8153.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgItem" fitHeight="100.0" fitWidth="100.0" layoutX="220.0" layoutY="324.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Capture.JPG" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgOrder" fitHeight="100.0" fitWidth="100.0" layoutX="381.0" layoutY="323.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/registration-icon-png-19.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgViewOrders" fitHeight="100.0" fitWidth="100.0" layoutX="522.0" layoutY="323.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/iconfinder_search_1608826.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Separator layoutX="26.0" layoutY="222.0" prefHeight="3.0" prefWidth="650.0" />
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="64.0" layoutY="501.0" prefHeight="38.0" prefWidth="601.0" text="Welcome" textAlignment="CENTER" textFill="GOLD">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="36.0" layoutY="560.0" prefHeight="45.0" prefWidth="629.0" text="Please select one of above main operations to proceed">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="11.0" layoutY="586.0" onMouseClicked="#logoutOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/login_rounded_60px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
