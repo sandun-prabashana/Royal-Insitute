@@ -93,13 +93,27 @@ public class ManageStudentForm implements Initializable {
     }
 
     public void getID(){
-        String s = null;
+//        String s = null;
+//        try {
+//            s = studentBO.newStudentID();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        txtId.setText(s);
         try {
-            s = studentBO.newStudentID();
+            String lastID = studentBO.newStudentID();
+            int newID = Integer.parseInt(lastID.substring(1, 4)) + 1;
+            if(newID < 10){
+                txtId.setText("S00"+newID);
+            }else if(newID < 100){
+                txtId.setText("S0"+newID);
+            }else{
+                txtId.setText("S"+newID);
+            }
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            txtId.setText("S001");
         }
-        txtId.setText(s);
     }
 //    public void btnDeleteOnAction(ActionEvent actionEvent) {
 //        String id = txtId.getText();
@@ -168,7 +182,6 @@ public class ManageStudentForm implements Initializable {
                     txtAdress.clear();
                     txtContact.clear();
                     txtDOB.clear();
-                    cmbGender.getItems().clear();
                     btnSave.setDisable(true);
 
 

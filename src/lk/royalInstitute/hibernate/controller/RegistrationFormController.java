@@ -205,13 +205,21 @@ public class RegistrationFormController implements Initializable {
         }
     }
     public void getRegId(){
-        String s = null;
+//        String s = null;
+//        try {
+//            s = registrationBO.newRegID();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        txtNo.setText(s);
         try {
-            s = registrationBO.newRegID();
+            String lastID = registrationBO.newRegID();
+            int newID = Integer.parseInt(lastID.substring(0,1)) + 1;
+            txtNo.setText(String.valueOf(newID));
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            txtNo.setText("1");
         }
-        txtNo.setText(s);
     }
 
     public void searchRegNo() {

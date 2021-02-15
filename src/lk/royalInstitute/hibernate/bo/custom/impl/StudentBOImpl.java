@@ -45,15 +45,16 @@ public class StudentBOImpl implements StudentBO {
     public String newStudentID() throws Exception {
         String lastID = studentDAO.getLastCustomerID();
 
-        int newID = Integer.parseInt(lastID.substring(1, 4)) + 1;
-
-         if(newID < 10){
-            return "S00"+newID;
-        }else if(newID < 100){
-            return "S0"+newID;
-        }else{
-            return "S"+newID;
-        }
+//        int newID = Integer.parseInt(lastID.substring(1, 4)) + 1;
+//
+//         if(newID < 10){
+//            return "S00"+newID;
+//        }else if(newID < 100){
+//            return "S0"+newID;
+//        }else{
+//            return "S"+newID;
+//        }
+        return lastID;
     }
 
     @Override

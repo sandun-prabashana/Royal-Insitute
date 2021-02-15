@@ -35,9 +35,10 @@ public class RegistrationBOImpl implements RegistrationBO {
     public String newRegID() throws Exception {
         String lastID = registrationDAO.getLastCustomerID();
 
-        int newID = Integer.parseInt(lastID.substring(0,1)) + 1;
+//        int newID = Integer.parseInt(lastID.substring(0,1)) + 1;
 
-        return String.valueOf(newID);
+//        return String.valueOf(newID);
+        return lastID;
     }
 
     @Override
